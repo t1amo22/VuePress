@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{306:function(t,n,e){"use strict";e.r(n);var s={name:"myHello",props:{msg:{default:"button",type:String}},data:function(){return{}}},u=e(45),l=Object(u.a)(s,function(){var t=this.$createElement;return(this._self._c||t)("el-button",[this._v(this._s(this.msg))])},[],!1,null,null,null);n.default=l.exports}}]);

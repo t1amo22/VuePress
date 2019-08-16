@@ -1,18 +1,24 @@
 module.exports = {
+    markdown: {
+        config: (md) => {
+            md.use(require('markdown-it-vuese'), { /* options */ })
+        }
+    },
     title: 'T1AMO',
     description: 'Just enjoying life',
     themeConfig: {
+        displayAllHeaders: true,
         sidebar: {
             '/foo/': [
               ['','入门'],    
-              ['a','Markdown 拓展'],  
-              ['b','b']   
+              ['markdown','Markdown 拓展'],  
+              ['basic','配置'],
+              ['vuese','vuese插件']      
             ],
       
             '/bar/': [
-              ['','bar'],      
-              ['c','c'], 
-              ['d','d']   
+              ['','demo'],
+              ['use','源码']
             ],
       
             // fallback
@@ -23,11 +29,9 @@ module.exports = {
         nav: [
           { text: 'Home', link: '/'},
           { text: 'learnnote', link: '/foo/' },
-          { text: 'bar', link: '/bar/'},
+          { text: 'demo', link: '/bar/'},
           { text: 'Github', link: 'https://github.com/t1amo22'}
         ]
     },
-    markdown: {
-        lineNumbers: true
-      }
+
 }
